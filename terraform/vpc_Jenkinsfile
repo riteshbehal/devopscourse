@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Terraform Repo') {
             steps {
                 echo 'Hello World'
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/riteshbehal/devopscourse.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/NareshD2/devopscourse.git']]])
         }}
         stage('Terraform Provision') {
             steps {
