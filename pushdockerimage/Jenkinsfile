@@ -25,7 +25,7 @@ pipeline {
         stage('Docker Push') {
             steps {
 		//sh 'docker push dockercorona/jenkinstest' (this will use the tag latest)    
-                sh 'docker push dockercorona/jenkinstest:$BUILD_NUMBER'
+                sh 'docker push nareshd2/jenkinstest:$BUILD_NUMBER'
                 }
             }
         }
