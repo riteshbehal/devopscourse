@@ -9,7 +9,6 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                print 'hello'
                 checkout scm
                 sh 'ls -la'
             }
